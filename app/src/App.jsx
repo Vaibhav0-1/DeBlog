@@ -7,6 +7,12 @@ import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets"
 
 export const App = () => {
   const endpoint = "https://indulgent-autumn-wave.solana-devnet.quiknode.pro/9e69048489ffe3a16ef9db9f008cb58c407b6b61/"
+  const wallets = useMemo(
+    () => [
+      new PhantomWalletAdapter(),
+    ],
+    []
+  )
 
   return (
     <ConnectionProvider endpoint={endpoint}>

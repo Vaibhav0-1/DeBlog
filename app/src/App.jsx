@@ -16,7 +16,7 @@ export const App = () => {
 
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider>
+      <WalletProvider wallets={wallets} autoConnect>
         <BlogProvider>
           <Router />
         </BlogProvider>

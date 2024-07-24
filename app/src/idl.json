@@ -12,7 +12,7 @@
             "type": "bytes",
             "value": "[112, 111, 115, 116]"
         }
-    ],
+    ],  
     "instructions": [
         {
             "name": "initUser",
@@ -139,6 +139,6 @@
         }
     ],
     "metadata": {
-        "address": "FVDLUX9ZnEp943trRR3taTCpEHbZouRRi1bkKqWHPb3j"
+        "address": "4bxAYUt7ETdzhf6APBJCHUxhFQVjVkd34ArPSoJR6VPB"
     }
 }

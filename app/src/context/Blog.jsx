@@ -1,6 +1,10 @@
 import { createContext, useContext } from "react";
+import * as anchor from '@project-serum/anchor';
+import { useAnchorWallet } from "@solana/wallet-adapter-react";
 
 const BlogContext = createContext();
+
+
 
 export const useBlog = () => {
   const context = useContext(BlogContext);

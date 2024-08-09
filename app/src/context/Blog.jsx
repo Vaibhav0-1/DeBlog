@@ -2,6 +2,8 @@ import { createContext, useContext } from "react";
 import * as anchor from '@project-serum/anchor';
 import { useAnchorWallet, useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { PublicKey,SystemProgram } from "@solana/web3.js";
+import { getAvatarUrl } from "src/functions/getAvatarUrl";
+import { getRandomName } from "src/functions/getRandomName";
 
 const BlogContext = createContext();
 

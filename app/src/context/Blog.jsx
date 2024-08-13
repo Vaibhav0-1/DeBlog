@@ -4,6 +4,9 @@ import { useAnchorWallet, useConnection, useWallet } from "@solana/wallet-adapte
 import { PublicKey,SystemProgram } from "@solana/web3.js";
 import { getAvatarUrl } from "src/functions/getAvatarUrl";
 import { getRandomName } from "src/functions/getRandomName";
+import idl from "src/idl.json";
+import { findProgramAddressSync } from "@project-serum/anchor/dist/cjs/utils/pubkey";
+import { utf8 } from "@project-serum/anchor/dist/cjs/utils/bytes";
 
 const BlogContext = createContext();
 

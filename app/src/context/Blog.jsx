@@ -10,7 +10,8 @@ import { utf8 } from "@project-serum/anchor/dist/cjs/utils/bytes";
 
 const BlogContext = createContext();
 
-
+//get programKey
+const PROGRAM_KEY = new PublicKey(idl.metadata.address)
 
 export const useBlog = () => {
   const context = useContext(BlogContext);
@@ -23,6 +24,10 @@ export const useBlog = () => {
 
 export const BlogProvider = ({ children }) => {
 
+  const anchoWallet = useAnchorWallet()
+  const { connection } = useConnection();
+  const { publicKey } = useWallet();
+ 
 
   return (
     <BlogContext.Provider
